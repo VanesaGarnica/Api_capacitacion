@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "J2VtFIELnzBa+KmP18UUDZYeyMsxo5Wt9vCYQPjS4kxbvrsqhNdh0k4xp5iUuggQY4JPlwnbgxGlJyQYVAZoHw==",
+  "dgSpecHash": "yTpDwdRtC7Bcnnbq19MRqRlE5WwAPxS2E3m+iULeaYqgH/hZOxBwHWqOCmkUju3CcDZy8tiNFlMCWVzv4U+m7A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vanesa\\source\\repos\\API_capacitacion\\API_capacitacion\\API_capacitacion.csproj",
+  "projectFilePath": "C:\\Users\\Vanesa\\Documents\\GitHub\\Api_capacitacion\\API_capacitacion\\API_capacitacion\\API_capacitacion.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Vanesa\\.nuget\\packages\\dapper\\2.0.35\\dapper.2.0.35.nupkg.sha512",
     "C:\\Users\\Vanesa\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
     "C:\\Users\\Vanesa\\.nuget\\packages\\microsoft.aspnet.webapi.core\\5.2.7\\microsoft.aspnet.webapi.core.5.2.7.nupkg.sha512",
     "C:\\Users\\Vanesa\\.nuget\\packages\\microsoft.aspnet.webapi.webhost\\5.2.7\\microsoft.aspnet.webapi.webhost.5.2.7.nupkg.sha512",
@@ -95,7 +96,7 @@
     "C:\\Users\\Vanesa\\.nuget\\packages\\system.reflection.dispatchproxy\\4.4.0\\system.reflection.dispatchproxy.4.4.0.nupkg.sha512",
     "C:\\Users\\Vanesa\\.nuget\\packages\\system.reflection.emit\\4.3.0\\system.reflection.emit.4.3.0.nupkg.sha512",
     "C:\\Users\\Vanesa\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.3.0\\system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512",
-    "C:\\Users\\Vanesa\\.nuget\\packages\\system.reflection.emit.lightweight\\4.3.0\\system.reflection.emit.lightweight.4.3.0.nupkg.sha512",
+    "C:\\Users\\Vanesa\\.nuget\\packages\\system.reflection.emit.lightweight\\4.7.0\\system.reflection.emit.lightweight.4.7.0.nupkg.sha512",
     "C:\\Users\\Vanesa\\.nuget\\packages\\system.reflection.extensions\\4.3.0\\system.reflection.extensions.4.3.0.nupkg.sha512",
     "C:\\Users\\Vanesa\\.nuget\\packages\\system.reflection.primitives\\4.3.0\\system.reflection.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\Vanesa\\.nuget\\packages\\system.reflection.typeextensions\\4.3.0\\system.reflection.typeextensions.4.3.0.nupkg.sha512",

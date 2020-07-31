@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vanesa\\source\\repos\\API_capacitacion\\API_capacitacion\\API_capacitacion.csproj": {}
+    "C:\\Users\\Vanesa\\Documents\\GitHub\\Api_capacitacion\\API_capacitacion\\API_capacitacion\\API_capacitacion.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vanesa\\source\\repos\\API_capacitacion\\API_capacitacion\\API_capacitacion.csproj": {
+    "C:\\Users\\Vanesa\\Documents\\GitHub\\Api_capacitacion\\API_capacitacion\\API_capacitacion\\API_capacitacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vanesa\\source\\repos\\API_capacitacion\\API_capacitacion\\API_capacitacion.csproj",
+        "projectUniqueName": "C:\\Users\\Vanesa\\Documents\\GitHub\\Api_capacitacion\\API_capacitacion\\API_capacitacion\\API_capacitacion.csproj",
         "projectName": "API_capacitacion",
-        "projectPath": "C:\\Users\\Vanesa\\source\\repos\\API_capacitacion\\API_capacitacion\\API_capacitacion.csproj",
+        "projectPath": "C:\\Users\\Vanesa\\Documents\\GitHub\\Api_capacitacion\\API_capacitacion\\API_capacitacion\\API_capacitacion.csproj",
         "packagesPath": "C:\\Users\\Vanesa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vanesa\\source\\repos\\API_capacitacion\\API_capacitacion\\obj\\",
+        "outputPath": "C:\\Users\\Vanesa\\Documents\\GitHub\\Api_capacitacion\\API_capacitacion\\API_capacitacion\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Vanesa\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -38,6 +38,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.35, )"
+            },
             "Microsoft.AspNet.WebApi.WebHost": {
               "target": "Package",
               "version": "[5.2.7, )"

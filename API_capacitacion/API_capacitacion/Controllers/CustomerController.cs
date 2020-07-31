@@ -7,6 +7,9 @@ using API_capacitacion.Contexts;
 using API_capacitacion.Entities;
 using CalculatorSOAP;
 using Microsoft.AspNetCore.Mvc;
+using Dapper;
+using Microsoft.Data.SqlClient;
+using Microsoft.Extensions.Configuration;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -16,18 +19,28 @@ namespace API_capacitacion.Controllers
     [ApiController]
     public class CustomerController : ControllerBase
     {
+        private IConfiguration configuration;
         private readonly AppDbContext context;
 
-        public CustomerController(AppDbContext context)
+        public CustomerController(AppDbContext context, IConfiguration configuration)
         {
             this.context = context;
+            this.configuration = configuration;
         }
 
         // GET: api/<CustomerController>
         [HttpGet]
         public IEnumerable<Customer> Get()
         {
-            return context.Customer.ToList();
+            string query = "SELECT * FROM Customer where id=2;";
+            using (var connection = new SqlConnection(configuration.GetConnectionString("ConnectionString")))
+            {
+                var customerDetails = connection.Query<Customer>(query).ToList();
+
+                Console.WriteLine(customerDetails.Count);
+                return (customerDetails);
+            }
+            // return context.Customer.ToList();
         }
         //GET: api/checkInfo
         [HttpGet]
