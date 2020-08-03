@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 using Dapper;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
+using System.Data.Common;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -18,6 +19,7 @@ namespace API_capacitacion.DAO
     {
         private static IConfiguration dbConfiguration;
         private static AppDbContext dbContext;
+        private static readonly string dbConnectionString = "Data Source=.; Initial Catalog=DbApi; Integrated Security=true";
 
         public CustomerDAO(AppDbContext context, IConfiguration configuration)
         {
@@ -29,8 +31,10 @@ namespace API_capacitacion.DAO
         public static List<Customer> Get()
         {
             string query = "SELECT * FROM Customer;";
-            using (var connection = new SqlConnection(dbConfiguration.GetConnectionString("ConnectionString")))
+            Debug.WriteLine("the saved connection string is " + dbConnectionString);
+            using (var connection = new SqlConnection(dbConnectionString))
             {
+                Debug.WriteLine("the connection string int the connection is " + connection.ConnectionString);
                 var customerDetails = connection.Query<Customer>(query).ToList();
 
                 return (customerDetails);

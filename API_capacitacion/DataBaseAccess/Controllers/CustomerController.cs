@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using API_capacitacion.Contexts;
 using API_capacitacion.DAO;
 using API_capacitacion.Entities;
 using Microsoft.AspNetCore.Mvc;
@@ -17,14 +16,6 @@ namespace API_capacitacion.Controllers
     [ApiController]
     public class CustomerController : ControllerBase
     {
-        private IConfiguration configuration;
-        private readonly AppDbContext context;
-
-        public CustomerController(AppDbContext context, IConfiguration configuration)
-        {
-            this.context = context;
-            this.configuration = configuration;
-        }
 
         // GET: api/<CustomerController>
         [HttpGet]
