@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Vanesa\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Vanesa\\.nuget\\packages"
+    ]
+  }
+}

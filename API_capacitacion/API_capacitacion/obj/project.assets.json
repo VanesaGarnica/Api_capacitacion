@@ -2161,6 +2161,19 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Entities.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -7488,11 +7501,17 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "Entities/1.0.0": {
+      "type": "project",
+      "path": "../Entities/Entities.csproj",
+      "msbuildProject": "../Entities/Entities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Dapper >= 2.0.35",
+      "Entities >= 1.0.0",
       "Microsoft.AspNet.WebApi.WebHost >= 5.2.7",
       "Microsoft.EntityFrameworkCore >= 3.1.6",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.6",
@@ -7508,9 +7527,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vanesa\\Documents\\GitHub\\Api_capacitacion\\API_capacitacion\\API_capacitacion\\API_capacitacion.csproj",
-      "projectName": "API_capacitacion",
-      "projectPath": "C:\\Users\\Vanesa\\Documents\\GitHub\\Api_capacitacion\\API_capacitacion\\API_capacitacion\\API_capacitacion.csproj",
+      "projectUniqueName": "C:\\Users\\Vanesa\\Documents\\GitHub\\Api_capacitacion\\API_capacitacion\\API_capacitacion\\DAO.csproj",
+      "projectName": "DAO",
+      "projectPath": "C:\\Users\\Vanesa\\Documents\\GitHub\\Api_capacitacion\\API_capacitacion\\API_capacitacion\\DAO.csproj",
       "packagesPath": "C:\\Users\\Vanesa\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Vanesa\\Documents\\GitHub\\Api_capacitacion\\API_capacitacion\\API_capacitacion\\obj\\",
       "projectStyle": "PackageReference",
@@ -7527,7 +7546,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Vanesa\\Documents\\GitHub\\Api_capacitacion\\API_capacitacion\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\Vanesa\\Documents\\GitHub\\Api_capacitacion\\API_capacitacion\\Entities\\Entities.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
